@@ -7,10 +7,12 @@ Zennに記事・本を投稿するためのローカル執筆環境を作るた�
 ## インストール手順
 
 ```bash
-npm init -y
-npm install zenn-cli
-npx zenn init
+pnpm init
+pnpm add zenn-cli
+pnpm exec zenn init
 ```
+
+> 初期構築時はnpmで導入したが、その後pnpmに移行した。移行手順は[pnpm.md](./pnpm.md)を参照。
 
 `zenn init` によって以下が生成される。
 
@@ -41,9 +43,9 @@ npx zenn init
 ## 使い方
 
 ```bash
-npm run new:article   # 新しい記事を作成
-npm run new:book      # 新しい本を作成
-npm run preview       # http://localhost:8000 でプレビュー
+pnpm new:article   # 新しい記事を作成
+pnpm new:book      # 新しい本を作成
+pnpm preview       # http://localhost:8000 でプレビュー
 ```
 
 ## 参考リンク

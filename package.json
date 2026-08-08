@@ -1,5 +1,5 @@
 {
-  "name": "it-blog-zenn",
+  "name": "zenn-blog-platform",
   "version": "1.0.0",
   "description": "Zenn blog content managed with zenn-cli",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "packageManager": "pnpm@11.17.0",
   "dependencies": {
     "zenn-cli": "^0.5.2"
   }

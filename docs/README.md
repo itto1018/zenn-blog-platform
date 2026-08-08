@@ -19,3 +19,4 @@
 | --- | --- |
 | Zenn CLI | [tools/zenn-cli.md](./tools/zenn-cli.md) |
 | Obsidian | [tools/obsidian.md](./tools/obsidian.md) |
+| pnpm | [tools/pnpm.md](./tools/pnpm.md) |

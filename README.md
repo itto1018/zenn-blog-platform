@@ -7,7 +7,7 @@ Zennに記事・本を投稿するためのローカル執筆環境（プラッ�
 ## セットアップ
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## 使い方
@@ -15,7 +15,7 @@ npm install
 ### 新しい記事を作成
 
 ```bash
-npm run new:article
+pnpm new:article
 ```
 
 `articles/` 配下にランダムなslugのMarkdownファイルが生成されます（Git管理対象外）。
@@ -23,7 +23,7 @@ npm run new:article
 ### 新しい本を作成
 
 ```bash
-npm run new:book
+pnpm new:book
 ```
 
 `books/` 配下に生成されます（Git管理対象外）。
@@ -31,14 +31,14 @@ npm run new:book
 ### プレビュー
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 `http://localhost:8000` でプレビューできます。
 
 ## 投稿方法
 
-1. `npm run new:article` でローカルに下書きを作成
+1. `pnpm new:article` でローカルに下書きを作成
 2. `npm run preview` で確認しながら執筆
 3. 完成したら[Zennのダッシュボード](https://zenn.dev/dashboard)から記事を貼り付けて公開
 
