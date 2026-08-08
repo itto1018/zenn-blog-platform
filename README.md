@@ -44,6 +44,10 @@ npm run preview
 
 > GitHub連携による自動デプロイを使う場合は、`articles/` `books/` を`.gitignore`から外して追跡対象にした上で、[Zennのデプロイ設定](https://zenn.dev/dashboard/deploys)からこのリポジトリを連携してください。
 
+## ドキュメント
+
+このプロジェクトに導入したツールの導入手順は[docs/](./docs/)にまとめています。
+
 ## 参考
 
 * [📘 Zenn CLIの使い方](https://zenn.dev/zenn/articles/zenn-cli-guide)
