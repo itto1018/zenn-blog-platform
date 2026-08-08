@@ -1,0 +1,18 @@
+{
+  "name": "it-blog-zenn",
+  "version": "1.0.0",
+  "description": "Zenn blog content managed with zenn-cli",
+  "main": "index.js",
+  "scripts": {
+    "preview": "zenn preview",
+    "new:article": "zenn new:article",
+    "new:book": "zenn new:book"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "zenn-cli": "^0.5.2"
+  }
+}
