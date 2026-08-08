@@ -39,14 +39,14 @@ pnpm preview
 ## 投稿方法
 
 1. `pnpm new:article` でローカルに下書きを作成
-2. `npm run preview` で確認しながら執筆
+2. `pnpm preview` で確認しながら執筆
 3. 完成したら[Zennのダッシュボード](https://zenn.dev/dashboard)から記事を貼り付けて公開
 
 > GitHub連携による自動デプロイを使う場合は、`articles/` `books/` を`.gitignore`から外して追跡対象にした上で、[Zennのデプロイ設定](https://zenn.dev/dashboard/deploys)からこのリポジトリを連携してください。
 
 ## ドキュメント
 
-このプロジェクトに導入したツールの導入手順は[docs/](./docs/)にまとめています。
+このプロジェクトに導入したツールの導入手順は、Obsidian Vault(`/Users/itto/Development/Obsidian/zenn-blog-platform/`)にまとめています。頻繁に書き足す学習・作業メモの性質が強いため、リポジトリ本体ではなくVault側で管理しています。
 
 ## 参考
 
