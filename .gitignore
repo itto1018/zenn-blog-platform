@@ -2,5 +2,8 @@ node_modules
 .DS_Store
 
 # 記事・本のコンテンツは頻繁に変わるため追跡対象外(Web版エディタで管理)
-/articles/
-/books/
+# ディレクトリ構造自体はリポジトリ上に残す
+/articles/*
+!/articles/.gitkeep
+/books/*
+!/books/.gitkeep
