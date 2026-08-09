@@ -46,7 +46,7 @@ pnpm preview
 
 ## ドキュメント
 
-このプロジェクトに導入したツールの導入手順は、Obsidian Vault(`/Users/itto/Development/Obsidian/zenn-blog-platform/`)にまとめています。頻繁に書き足す学習・作業メモの性質が強いため、リポジトリ本体ではなくVault側で管理しています。
+このプロジェクトに導入したツールの導入手順は、Obsidian Vault(`/Users/itto/Documents/Obsidian/zenn-blog-platform/`)にまとめています。頻繁に書き足す学習・作業メモの性質が強いため、リポジトリ本体ではなくVault側で管理しています。
 
 ## 参考
 
