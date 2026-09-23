@@ -1,0 +1,23 @@
+node_modules
+.DS_Store
+.pnpm-store
+.env*
+*.log
+
+# Claude Codeの個人設定
+/.claude/settings.local.json
+
+# 記事・本・下書きのコンテンツは頻繁に変わるため追跡対象外
+# (記事・本はWeb版エディタで管理、下書きはローカルのみ)
+# ディレクトリ構造自体はリポジトリ上に残す
+/articles/*
+!/articles/.gitkeep
+/books/*
+!/books/.gitkeep
+/drafts/*
+!/drafts/.gitkeep
+
+# Obsidian Vaultのうち環境ごとに変わるファイル
+/vault/.obsidian/workspace.json
+/vault/.obsidian/workspace-mobile.json
+/vault/.trash/
