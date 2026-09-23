@@ -2,7 +2,7 @@
 
 ## 概要
 
-Zennに記事・本を投稿するためのローカル執筆環境を作るために導入。ローカルでMarkdownを書き、`zenn preview`で確認してからZennのWeb版エディタに貼り付けて投稿する運用にしている。
+Zennに記事を投稿するためのローカル執筆環境を作るために導入。ローカルでMarkdownを書き、`zenn preview`で確認してからZennのWeb版エディタに貼り付けて投稿する運用にしている。
 
 ## インストール手順
 
@@ -17,7 +17,7 @@ pnpm exec zenn init
 `zenn init` によって以下が生成される。
 
 - `articles/` — 記事の格納先
-- `books/` — 本の格納先
+- `books/` — 本の格納先(本は書かない運用のため削除済み)
 - `.gitignore`(node_modulesなど)
 - `README.md`(zenn-cliのデフォルト説明)
 
@@ -27,18 +27,18 @@ pnpm exec zenn init
 {
   "scripts": {
     "preview": "zenn preview",
-    "new:article": "zenn new:article",
-    "new:book": "zenn new:book"
+    "new:article": "zenn new:article"
   }
 }
 ```
 
 ## 設定・運用方針
 
-- `articles/` `books/` `drafts/` は内容の変更が頻繁なため、**Git管理対象外**にしている(`.gitignore`で`/articles/*` `/books/*` `/drafts/*`を無視し、`.gitkeep`でディレクトリ構造のみ保持)。
+- `articles/` `drafts/` は内容の変更が頻繁なため、**Git管理対象外**にしている(`.gitignore`で`/articles/*` `/drafts/*`を無視し、`.gitkeep`でディレクトリ構造のみ保持)。
   - `drafts/` はzenn-cliの管理外で、記事化する前の下書きや資料を置く場所として独自に追加したもの。
+  - `raw/` もzenn-cliの管理外で、エクスポートデータなどの生データを一時保管する場所。個人情報を含みうるため同様にGit管理対象外。
 - 記事はZennのWeb版エディタで直接投稿する運用のため、GitHub連携による自動デプロイは現時点では未使用。
-  - 自動デプロイを使う場合は`.gitignore`から`articles/` `books/`を外し、[Zennのデプロイ設定](https://zenn.dev/dashboard/deploys)からリポジトリを連携する。
+  - 自動デプロイを使う場合は`.gitignore`から`articles/`を外し、[Zennのデプロイ設定](https://zenn.dev/dashboard/deploys)からリポジトリを連携する。
 - リポジトリ名は `zenn-blog-platform`(GitHub: https://github.com/itto1018/zenn-blog-platform)。
 - **投稿は必ず下書き(非公開)から行う**。Zennダッシュボードで一旦下書き保存し、Web上のプレビューで最終チェックしたのちに本投稿(公開)へ切り替える。frontmatterの`published`を直接編集する場合も、初回コミット/投稿時は`published: false`にしておくこと。
 
@@ -46,7 +46,6 @@ pnpm exec zenn init
 
 ```bash
 pnpm new:article   # 新しい記事を作成
-pnpm new:book      # 新しい本を作成
 pnpm preview       # http://localhost:8000 でプレビュー
 ```
 

@@ -7,15 +7,17 @@ node_modules
 # Claude Codeの個人設定
 /.claude/settings.local.json
 
-# 記事・本・下書きのコンテンツは頻繁に変わるため追跡対象外
-# (記事・本はWeb版エディタで管理、下書きはローカルのみ)
+# 記事・下書きのコンテンツは頻繁に変わるため追跡対象外
+# (記事はWeb版エディタで管理、下書きはローカルのみ)
 # ディレクトリ構造自体はリポジトリ上に残す
 /articles/*
 !/articles/.gitkeep
-/books/*
-!/books/.gitkeep
 /drafts/*
 !/drafts/.gitkeep
+
+# エクスポートデータなどの生データは個人情報を含みうるため追跡対象外
+/raw/*
+!/raw/.gitkeep
 
 # Obsidian Vaultのうち環境ごとに変わるファイル
 /vault/.obsidian/workspace.json
