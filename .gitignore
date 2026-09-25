@@ -20,6 +20,6 @@ node_modules
 !/raw/.gitkeep
 
 # Obsidian Vaultのうち環境ごとに変わるファイル
-/vault/.obsidian/workspace.json
-/vault/.obsidian/workspace-mobile.json
-/vault/.trash/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
